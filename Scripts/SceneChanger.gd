@@ -13,8 +13,6 @@ func _ready():
 func ChangeScene(Player):
 	get_tree().change_scene("res://Level2.tscn");
 	PlayerObject = Player;
-	print("The object is " , Player);
 	pass
 func GetPlayer():
-	print("Sending the object which is ", PlayerObject)
 	return PlayerObject;

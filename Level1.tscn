@@ -3,7 +3,7 @@
 [ext_resource path="res://wall.tres" type="TileSet" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://DefaultEnemy.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Level1.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/Level1.gd" type="Script" id=4]
 [ext_resource path="res://Pickup.tscn" type="PackedScene" id=5]
 [ext_resource path="res://LevelChange.tscn" type="PackedScene" id=6]
 

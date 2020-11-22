@@ -32,7 +32,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jumpHeigh;
 		
-	## vector2.up is used to check the direction of the floor, prevents from jumping in air
+	# vector2.up is used to check the direction of the floor, prevents from jumping in air
 	velocity = move_and_slide(velocity, Vector2.UP);
 	# prevents non-stop movement, drops the movement speed from the currently set value to 0 with the weight specified
 	velocity.x = lerp(velocity.x, 0, 0.1);
@@ -65,11 +65,9 @@ func _on_PlayerHitBox_area_entered(area):
 			hitDirection = 1;
 		playerDeath();
 	elif area.name == "EnemyBullet":
-		var rigidbody = area.get_parent();
-		# get the direction of the bullet
-		var velocityDirection = sign(rigidbody.linear_velocity.x);
+		var rigidBody = area.get_parent();
+		var velocityDirection = sign(rigidBody.linear_velocity.x);
 		hitDirection = velocityDirection;
-		print("the bullet hit me on ", hitDirection);
 		playerDeath();
 	pass 
 

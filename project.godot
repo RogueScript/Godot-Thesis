@@ -26,7 +26,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-SceneChanger="*res://SceneChanger.gd"
+SceneChanger="*res://Scripts/SceneChanger.gd"
 
 [display]
 
